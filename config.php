@@ -1,6 +1,6 @@
 <?php
 // Database configuration
-$host = "mywebappname989.azurewebsites.net";  // or your database server (e.g., "localhost")
+$host = "myserverdb989.database.windows.net";  // or your database server (e.g., "localhost")
 $username = "shashank";   // your MySQL username (default is "root" for XAMPP)
 $password = "Login@123#456";       // your MySQL password (default is empty for XAMPP)
 $database = "mysqldb989"; // your database name
