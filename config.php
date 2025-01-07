@@ -1,15 +1,16 @@
 <?php
 // Database configuration
-$host = "myserverdb989.database.windows.net";  // or your database server (e.g., "localhost")
-$username = "shashank";   // your MySQL username (default is "root" for XAMPP)
-$password = "Login@123#456";       // your MySQL password (default is empty for XAMPP)
-$database = "mysqldb989"; // your database name
+$host = "myserverdb989.database.windows.net";  // Azure SQL Server hostname
+$username = "shashank";   // Database username
+$password = "Login@123#456";  // Database password
+$database = "mysqldb989"; // Database name
 
-// Create connection
-$conn = new mysqli($host, $username, $password, $database);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+// Create connection using PDO
+try {
+    $conn = new PDO("sqlsrv:server=$host;Database=$database", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // echo "Connected successfully";
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 ?>
