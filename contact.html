@@ -92,25 +92,13 @@
                 Contact Us
               </h2>
             </div>
-            <form action="contact.php" method="post">
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  Send
-                </button>
-              </div>
-            </form>
+            <form action="contact.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Your Phone" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+</form>
           </div>
         </div>
       </div>
