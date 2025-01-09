@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$host = "sqlserver898new.database.windows.net";  // Azure SQL Server hostname
+$host = "shankserver989.database.windows.net";  // Azure SQL Server hostname
 $username = "shashank";   // Database username
 $password = "Login@123#456";  // Database password
-$database = "appdb"; // Database name
+$database = "mydatashank898"; // Database name
 
 // Create connection using PDO
 try {
