@@ -1,7 +1,7 @@
 <?php
 // Database configuration
 $host = "shankserver989.database.windows.net";  // Azure SQL Server hostname
-$username = "shashank";   // Database username
+$username = "shahsank";   // Database username
 $password = "Login@123#456";  // Database password
 $database = "mydatashank898"; // Database name
 
