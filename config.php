@@ -1,7 +1,7 @@
 <?php
 // Database configuration
 $host = "mytask989.mysql.database.azure.com";  // Azure MySQL server
-$username = "shashank@mytask989";             // Username with server suffix
+$username = "shashank";             // Username with server suffix
 $password = "Login@123#456";                  // Password
 $database = "gymdb";                          // Database name
 
