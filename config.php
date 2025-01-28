@@ -23,7 +23,7 @@
 <?php
 // Database configuration
 $host = "postgressdb989.postgres.database.azure.com";  // Azure PostgreSQL server
-$username = "priyanka@postgressdb989";  // Ensure full username
+$username = "priyanka";  // Ensure full username
 $password = "Login@123#456";  // Password
 $database = "gymdb";
 
