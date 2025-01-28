@@ -32,7 +32,7 @@
 // $conn->close();
 // ?>
 
-<?php
+<!-- <?php
 // Include the database connection file
 include('config.php');  // Assuming config.php sets up PostgreSQL connection
 
@@ -68,4 +68,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Close the connection
 pg_close($conn);
+?>
+ -->
+
+<?php
+// Enable error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include('config.php');  
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "<pre>";
+    print_r($_POST);
+    echo "</pre>";
+
+    exit(); // Stop script to check if form data is coming
+}
 ?>
